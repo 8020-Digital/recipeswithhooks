@@ -10,10 +10,19 @@ export const GET_LOCAL_DATA = gql`
 `;
 
 export const GET_ALL_RECIPES = gql`
-    query {
-        getAllRecipes {
-            _id 
-            name
-        }
+  query {
+      getAllRecipes {
+          _id 
+          name
+      }
+  }
+`
+
+export const SEARCH_RECIPES = gql`
+  query($searchTerm: String) {
+    searchRecipes(searchTerm: $searchTerm){
+      name
+      description
     }
+  }
 `

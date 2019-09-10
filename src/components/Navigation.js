@@ -17,7 +17,7 @@ const Navigation = (props) => {
                     <Nav.Link onClick={() => { navigate.push("signup") }}>
                         SignUp
                     </Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
+                    <Nav.Link onClick={()=>{navigate.push("search")}}>Search</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
